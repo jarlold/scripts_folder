@@ -1,0 +1,5 @@
+#!/bin/bash
+# Obviously this could be an alias in .bashrc but if it's in the scripts folder
+# it'll get copied over to other computers next time i copy over all my scripts :P
+
+youtube-dl -x --embed-thumbnail --audio-format mp3 $1

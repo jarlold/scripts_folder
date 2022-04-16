@@ -1,5 +1,5 @@
 ### Introduction
-These are some scripts I "wrote". I keep them in ~/Scripts (which I add to my path)
+These are some scripts I "wrote". I keep them in ~/Scripts (which I add to my path).
 Some of these are just wrappers to other commands I found counter-intuitive, or for
 fairly intuitive commands that have crazy long `man` pages.
 
@@ -10,6 +10,20 @@ There's a lot of great command-line tools out there, but I can't be asked to mem
 a new set of flags and patterns for each one. Especially for tools that do a wide range
 of things.
 
+### Installation
+I use ParrotOS as my main daily-use operating system, and so these scripts are designed
+to work on a more-or-less clean install of ParrotOS. That being said, most of these tools
+are pretty common to anyone interested in cybersecurity or systems-administration work, and
+I'm sure you'll have no difficulty installing them yourself if need be.
+
+
+So assuming the tools these scripts wrap are already installed, you just have to run:
+```
+mkdir ~/Scripts
+echo "$PATH=$PATH:~/Scripts" >> ~/.bashrc
+```
+And then restart your terminal emulator.
+
 
 ### Original scripts
 Some of these scripts do actually have unique functions, but I simply found too small
@@ -19,7 +33,7 @@ to justify giving them their own repo, so they live in here.
 
 | Script          | Description                                         |
 | --------------- | --------------------------------------------------- |
-| `proxy_scraper` | Scraps, test, and formats proxies for proxychains.  |
+| `proxy_scraper` | Scrapes, test, and formats proxies for proxychains. |
 | `smtp_mta.sh`   | Pretends to be an SMTP MTA server delivering mail.  |
 | `csv_parse.py`  | Pulls a column out of a .csv file.                  |
 
@@ -37,13 +51,9 @@ pretend it was put on the CLI.
 
 | Script                        | Description                                         |
 | ----------------------------- | --------------------------------------------------- |
-| `hydra_ssh_brute              | Calls hydra's ssh brute in a less annoying way.     |
+| `hydra_ssh_brute`             | Calls hydra's ssh brute in a less annoying way.     |
 
 ### Scripts that need some ancient ritual done before you use them
-Some tools require that you do some ancient ritual of going
-around changing important system files and settings before use.
-most of which you'd like to return to their normal state after the use of the tools.
-
 Some tools require that you do some ancient ritual of changing system files and settings before
 you can use them. Normally after use, you want everything to be set back to normal.
 

@@ -20,7 +20,7 @@ I'm sure you'll have no difficulty installing them yourself if need be.
 So assuming the tools these scripts wrap are already installed, you just have to run:
 ```
 mkdir ~/Scripts
-echo "$PATH=$PATH:~/Scripts" >> ~/.bashrc
+echo "PATH=$PATH:~/Scripts" >> ~/.bashrc
 ```
 And then restart your terminal emulator.
 

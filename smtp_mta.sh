@@ -6,16 +6,18 @@ if [ $1 == "--help" ] || [ $1 == "-h" ]; then
   echo "the domain of the reciever. If no message is supplied, the message"
   echo "will be read from standard input."
   echo "[USAGE] smtp_fake_mta.sh destination_server port from_addr to_addr subject message"
+  echo "[EXAMPLE] smtp_fake_mta.sh mail.jarlold.net 25 sender@test.com reciever@test.com subject message"
   echo "[EXAMPLE] smtp_fake_mta.sh mail.jarlold.net 25 sender@test.com reciever@test.com"
+  echo ""
+  echo "Be careful using this script, I wrote it when I was 13 and got suspended from"
+  echo "highschool for messing with the schoolboard's emails."
   exit
 fi
 
 mail_server=$1
 port=$2
-
 FROM=$3
 TO=$4
-
 Subject=$5
 
 

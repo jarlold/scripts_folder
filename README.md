@@ -84,3 +84,4 @@ with doing that, but I dislike it for a few reasons:
 | `ytmp3`                       | Calls youtube-dl to make mp3 w/ thumbnails.         |
 | `find_suid_bits.sh`           | Finds files with insecure SUID bits.                |
 | `python_terminal_upgrade.sh`  | Upgrade from `sh` to `bash` via python.             |
+| `email_rep.sh`                | Get info from emailrep.io through curl.             |

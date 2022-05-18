@@ -33,11 +33,12 @@ to justify giving them their own repo, so they live in here.
 
 
 
-| Script          | Description                                         |
-| --------------- | --------------------------------------------------- |
-| `proxy_scraper` | Scrapes, test, and formats proxies for proxychains. |
-| `smtp_mta.sh`   | Pretends to be an SMTP MTA server delivering mail.  |
-| `csv_parse.py`  | Pulls a column out of a .csv file.                  |
+| Script              | Description                                         |
+| ------------------- | --------------------------------------------------- |
+| `proxy_scraper`     | Scrapes, test, and formats proxies for proxychains. |
+| `smtp_mta.sh`       | Pretends to be an SMTP MTA server delivering mail.  |
+| `csv_parse.py`      | Pulls a column out of a .csv file.                  |
+| `override_c_func.sh`| Use `LD_PRELOAD` to mess with C programs.           |
 
 
 

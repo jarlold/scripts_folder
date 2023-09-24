@@ -10,8 +10,11 @@ fix_stylus.sh
 
 # Some settings that are particular to my laptop
 display_name='eDP-1'
-wacom_devices="11 15"
 
+stylus_id=$(xsetwacom --list | grep STYLUS | grep -P --only-matching "\d{0,}")
+eraser_id=$(xsetwacom --list | grep ERASER | grep -P --only-matching "\d{0,}")
+
+wacom_devices="${stylus_id} ${eraser_id}"
 
 function portrait_mode() {
   # Rotate the screen to portrait
@@ -37,8 +40,13 @@ function normal_mode() {
 current_orientation=$(xrandr --query --verbose | grep $display_name | cut -d ' ' -f 6)
 
 if [ $current_orientation = 'normal' ]; then
+  echo "Switching to portrait mode on monitors $display_name"
   portrait_mode
+  fix_stylus.sh
 else
+  echo "Switching to normal mode on monitors $display_name"
   normal_mode
+  fix_stylus.sh
+  fix_stylus.sh
 fi
 

@@ -39,6 +39,8 @@ to justify giving them their own repo, so they live in here.
 | `smtp_mta.sh`       | Pretends to be an SMTP MTA server delivering mail.  |
 | `csv_parse.py`      | Pulls a column out of a .csv file.                  |
 | `override_c_func.sh`| Use `LD_PRELOAD` to mess with C programs.           |
+| `fix_stylus.sh`     | Tweaks some settings for styluses on old Fujitsu laptops. |
+| `portrait_mode.sh`  | Extends the above to support portrait mode.         |
 
 
 

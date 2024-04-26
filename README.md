@@ -41,7 +41,7 @@ to justify giving them their own repo, so they live in here.
 | `override_c_func.sh`| Use `LD_PRELOAD` to mess with C programs.           |
 | `fix_stylus.sh`     | Tweaks some settings for styluses on old Fujitsu laptops. |
 | `portrait_mode.sh`  | Extends the above to support portrait mode.         |
-
+| `hexchat_emojis.py` | Lets you type `/emoji :emoji_name:` in Hexchat to make emojis|
 
 
 ### Scripts that just adapt other scripts

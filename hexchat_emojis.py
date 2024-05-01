@@ -1,3 +1,7 @@
+# This is a hexchat script, its meant to be loaded in ~/.config/hexchat/addons
+# it is not meant to be called from the terminal and would serve little purpose
+# if you did.
+
 __module_name__ = "Vomit"
 __module_version__ = "1.1"
 __module_description__ = "Add vomit emoji command and other emojis too"

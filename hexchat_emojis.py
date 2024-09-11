@@ -93,7 +93,11 @@ def any_emoji(word, word_eol, userdata):
         word[1] = ":" + word[1].strip(":")+ ":"
 
     # Send them in chat
-    selected_emoji = get_emoji(word[1])
+    try:
+        selected_emoji = get_emoji(word[1])
+    except ValueError:
+        wrong()
+        return
     if selected_emoji == word[1]:
         print("No such emoji")
     else:
